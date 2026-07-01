@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  background-color: #0a0a0a;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+  font-size: 56px;
+}
+header{position: absolute;background: transparent;top: 0;left: 0;width: 100%;border: 0;z-index: 9;}
+.contactbtn{color: #d50000; text-decoration: none;font-size: 16px;padding: 10px 20px;border: 2px solid #d50000; font-weight: 600;border-radius: 8px;}
+.mission p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  color:#d50000;
+}
+
+.bg1 {
+  /* background-image: url('../../public/images/about-img.webp'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 64px 0px;
+  background-position: 100%;
+}
+
+.bg2 {
+  background-image: url('../../public/images/mission-vision-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 64px 0px;
+  background-position: 25%;
+}
+
+.mission {
+  padding: 0 30px;
+}
+
+.about {
+  padding: 0 30px;
+}
+
+.about p {
+  font-size: 15px;
+}
+
+.aboutlogo p {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.hrline {
+  color: #fff;
+}
+
+.hero-slide {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.about-title {
+  margin-right: 476px !important;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8%;
+}
+
+.hero-content a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero-left {
+  color: white;
+  max-width: 500px;
+}
+
+.hero-left h1 {
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+
+.take-look {
+  display: flex;
+  align-items: last baseline;
+  gap: 15px;
+}
+
+.take-look span {
+  width: 50px;
+  height: 2px;
+  background: white;
+}
+
+.hero-right img {
+  max-height: 70vh;
+}
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px 20px;
+  }
+
+  .hero-left {
+    width: 100%;
+    order: 1;
+  }
+
+  .hero-right {
+    width: 100%;
+    order: 2;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .hero-right img {
+    width: 85%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .hero-left h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+  }
+
+  .take-look {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .about-title {
+    text-align: center !important;
+    margin: 0px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bg1 {
+    background-image: none;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
