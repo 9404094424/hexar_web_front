@@ -1,4 +1,3 @@
-import react from 'react';
 
 export default function Imageslider({ p1 }) {
 
@@ -28,7 +27,7 @@ export default function Imageslider({ p1 }) {
 
                 <div className="hero-right">
 
-                    <img src={process.env.REACT_APP_API_PATH + "/uploads/" + p1.image} />
+                    <img alt="img" src={process.env.REACT_APP_API_PATH + "/uploads/" + p1.image} />
 
                 </div>
             </div>
